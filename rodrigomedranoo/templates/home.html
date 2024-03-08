@@ -1,0 +1,18 @@
+<h1>Esta es la pagina principal</h1>
+{{msg}}
+
+{% if user.is_authenticated %}
+<li>
+    <a href="/nueva/">Dar de alta nueva reservacion </a>
+</li>
+<li>
+    <a href="/cerrarsesion/">Cerrar sesion</a>
+</li>
+{% else %}
+<li>
+    <a href="/registro/">Registrese</a>
+</li>
+<li>
+    <a href="/login/">Inicio Sesion</a>
+</li>
+{% endif %}
